@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400..700&display=swap');
+
+body {
+    font-family: "Alegreya", serif;
+    background-color: #F3D4A5;
+}
+
+
+ul li{
+    list-style: none;
+}
+ a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.bgimg img {
+    border-radius: 16px;
+    height: 800px;
+}
+
+.text h1 {
+    font-size: 70px;
+}
+
+.simg img {
+    height: 600px;
+    border-radius: 16px;
+    overflow: hidden;
+    width: 400px;
+    transition: all 1s;
+}
+
+.simg img:hover{
+    scale: 1.2;
+}
+
+.simg{
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+
+.krishna-img img{
+    height: 700px;
+    border-radius: 16px;
+    transition: all 1s;
+}
+.krishna-img img:hover{
+    scale: 1.1;
+}
+
+.group img{
+    height: 600px;
+    width: 400px;
+    border-radius: 16px;
+    
+}
+
+.group{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    animation: spin 20s infinite linear;
+}
+
+.group2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    animation: spinn 30s infinite linear;
+}
+.group2 img{
+     height: 600px;
+    width: 400px;
+    border-radius: 16px;
+}
+.carosel,.carosel2{
+    overflow-x: auto;
+    display: flex;
+    gap: 1em;
+}
+
+.carosel::-webkit-scrollbar{
+    display: none;
+}
+.carosel2::-webkit-scrollbar{
+    display: none;
+}
+
+@keyframes spin{
+    from{
+        translate: 0;
+    }to{
+        translate: -100%;
+    }
+}
+@keyframes spinn{
+    from{
+        translate: -100%;
+    }to{
+        translate: 0;
+    }
+}
+@keyframes appear{
+    from{
+        opacity: 0;
+        scale: 0.5;
+    }
+    to{
+        opacity: 1;
+        scale: 1;
+       
+    }
+}
+
+
+/* read page */
+
+.chName a{
+    border: 1px solid black;
+    margin-bottom: 10px;
+    border-radius: 16px;
+    padding: 10px;
+    cursor:pointer;
+    display: block;
+    
+}
